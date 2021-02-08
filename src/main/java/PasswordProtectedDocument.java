@@ -34,6 +34,10 @@ public class PasswordProtectedDocument {
     // OLE2 format - 2003
     static final String ORIGINAL_EXCEL_OLE2 = "./src/main/resources/SampleExcel2003.xls";
     static final String ENCRYPTED_EXCEL_OLE2 = "./src/main/resources/SampleExcel2003Encrypted.xls";
+
+    // static final String DAVID_ORIGINAL_EXCEL_OLE2 = "./src/main/resources/Book2.xls";
+    // static final String DAVID_ENCRYPTED_EXCEL_OLE2 = "./src/main/resources/Book2Encrypted.xls";
+
     static final String ORIGINAL_WORD_OLE2 = "./src/main/resources/SampleWord2003.doc";
     static final String ENCRYPTED_WORD_OLE2 = "./src/main/resources/SampleWord2003Encrypted.doc";
 
@@ -52,6 +56,7 @@ public class PasswordProtectedDocument {
     public static void main(final String... args) throws Exception {
 
         generateEncryptedDocument(ORIGINAL_EXCEL_OLE2, ENCRYPTED_EXCEL_OLE2, PASSWORD);
+//        generateEncryptedDocument(DAVID_ORIGINAL_EXCEL_OLE2, DAVID_ENCRYPTED_EXCEL_OLE2, PASSWORD);
         generateEncryptedDocument(ORIGINAL_WORD_OLE2, ENCRYPTED_WORD_OLE2, PASSWORD);
         generateEncryptedDocument(ORIGINAL_EXCEL_OOXML, ENCRYPTED_EXCEL_OOXML, PASSWORD);
         generateEncryptedDocument(ORIGINAL_WORD_OOXML, ENCRYPTED_WORD_OOXML, PASSWORD);
